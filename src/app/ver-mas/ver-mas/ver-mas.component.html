@@ -1,0 +1,25 @@
+<app-nav-bar></app-nav-bar>
+
+
+<div class="section-black"> 
+
+   
+<p class="titulo-de-post"> {{ respuesta.Titulo }}  </p>
+
+<p class="usuario-de-post">  {{ respuesta.Usuario }}  </p>
+
+<div class="contenedor">
+<img class="imagen" [src]="respuesta.Url" alt="">
+
+<p class="descripcion-de-post"> <span class="usuario-dice">{{ respuesta.Usuario }} </span> Dice: <br>   {{ respuesta.Descripcion }}  </p>
+
+</div>
+
+
+<app-footer></app-footer>
+
+</div>
+
+
+
+

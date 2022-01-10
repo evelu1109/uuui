@@ -1,0 +1,22 @@
+
+
+<form [formGroup]="usuarioForm" (ngSubmit)="onSubmit()">
+
+
+<input type="text" placeholder="Ingresa tu nombre o apodo" maxlength="15"
+formControlName="nombreApodo">
+
+<input type="email" placeholder="Ingresa tu Email" id="Email"
+formControlName="email">
+
+
+<button type="submit" [disabled]="!usuarioForm.valid"> Listo </button>
+
+</form>
+
+
+<div>
+<h1> {{this.username }} </h1>
+</div>
+
+<app-footer></app-footer>

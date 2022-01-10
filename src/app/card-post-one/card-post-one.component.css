@@ -1,0 +1,118 @@
+.card-full{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.card-border{
+    border-radius: 5px;
+    width: 430px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative; z-index: index 1;
+    box-shadow: 1px 1px 10px #000000;
+}
+
+.img-card{
+    border-radius: 5px;
+    width: 430px;
+    height: 320px;
+    position:absolute; z-index: index 2;
+}
+
+.info-card{
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 5px 5px 5px 5px;
+    position:relative; z-index: index 3;
+}
+
+
+.info-card:hover{
+    animation-name: animacion-cards1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes animacion-cards1 {
+   0%{
+   
+    }
+   25%{
+    padding-top: 123px;
+    padding-bottom: 123px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.397);}
+    100%{
+    padding-top: 123px;
+    padding-bottom: 123px;
+    font-size: 25px;
+    }
+    }
+
+.info-title{
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 30px #000000;
+    position:relative; z-index: index 3;
+    
+}
+
+.info-author{
+    font-weight: 200;
+    font-size: 15;
+    margin: 0 auto;
+    text-shadow: 0px 0px 30px #000000;
+    position:relative; z-index: index 3;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .card-border{
+        width: 300px;
+        height: 250px;
+    }
+
+    .img-card{
+        width: 300px;
+        height: 250px;
+    }
+
+
+    .info-title{
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
+    .info-author{
+        font-size: 10;
+    }
+
+
+    @keyframes animacion-cards1 {
+        0%{
+         }
+
+        25%{
+         padding-top: 90px;
+         padding-bottom: 90px;
+         }
+
+         100%{
+         font-size: 25px;
+         padding-top: 90px;
+         padding-bottom: 90px;
+         }
+
+         }
+
+}

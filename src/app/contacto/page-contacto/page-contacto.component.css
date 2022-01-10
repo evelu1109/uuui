@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+}
+
+.section-black{
+   height: 500px; 
+   background-image: linear-gradient(
+    rgb(17, 17, 17),
+    rgb(10, 10, 10) 
+);
+}
+
+.titulos{
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0%;
+    animation-name: animacion-titulo;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+
+
+
+.text-1{
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 15px; 
+    color: #FFFFFF;
+    text-shadow: 0px 0px 30px #000000;
+    text-align: left;
+    padding-left: 240px;
+}
+
+.text-2{
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 80px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 30px #000000;
+
+}
+
+.text-3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 30px #000000;
+    text-align: right;
+    padding-right: 240px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 100px; 
+}
+
+
+.link-redes{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 30px #000000;
+    
+}
+
+.facebook{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+
+    cursor: pointer;
+}
+
+.facebook:hover{
+    animation-name: animacion-social-links;
+      animation-duration: 1s;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;  
+  }
+
+
+
+.twitter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+
+    cursor: pointer;
+}
+
+.twitter:hover{
+    animation-name: animacion-social-links;
+      animation-duration: 1s;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;  
+  }
+
+
+
+.instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    cursor: pointer;
+}
+
+.instagram:hover{
+  animation-name: animacion-social-links;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;  
+}
+
+
+.social-icon{
+    font-weight: 200;
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.titulo{
+    padding-top: 20px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45px;
+    color: #272727;
+    text-shadow: 0px 0px 5px #00000085;
+    margin-bottom: 30px;
+    
+}
+
+.descripcion{
+    font-family: Roboto;
+    font-weight: 300;
+    padding-left: 10px;
+    font-style: normal;
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    width: 70%;
+    text-shadow: 0px 0px 1px #0000004f;
+}
+
+.resaltador{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+
+@keyframes animacion-titulo {
+    
+0%{}
+
+100%{
+    opacity: 100%;
+    padding-top: 150px;
+}
+
+}
+
+
+@keyframes animacion-social-links {
+    
+    0%{}
+
+    100%{   
+        background-color: rgba(255, 255, 255, 0.048);
+        border: 2px solid rgba(255, 255, 255, 0.233);
+        border-radius: 150px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .text-1{
+        font-size: 15px; 
+        padding-left: 50px;
+    }
+
+    .text-2{
+        font-size: 40px;
+    }
+
+    .text-3{
+        font-size: 15px;
+        color: #FFFFFF;
+        text-align: right;
+        padding-right: 50px;
+    }
+
+
+    .social-links{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .social-icon{
+        font-size: 30px;
+    }
+
+
+    .link-redes{
+        font-size: 15px;
+        
+    }
+
+
+    .facebook{
+        justify-content: center;
+    }
+
+    .twitter{
+        justify-content: center;
+    }
+
+    .instagram{
+        justify-content: center;
+    }
+
+}

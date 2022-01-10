@@ -1,0 +1,28 @@
+<p   class="title"> {{ sectionTitle }} </p>
+
+<p class="description"> {{ sectionSubtitle }} </p>
+
+<div class="cards-container">
+
+<div class="cards-first-line">
+
+    
+
+
+<div  class="cards-children">
+
+<app-card-post-one  [InfoBucle]="item"  [routerLink]="['/','post', item?.ID]" *ngFor="let item of service.infoPost | slice:0:6; let i=index" ></app-card-post-one>
+
+</div>
+
+</div>
+
+<div class="cards-second-line">
+
+</div>
+
+</div>
+
+<div class="button-container">
+<app-ver-todas-button></app-ver-todas-button>
+</div>

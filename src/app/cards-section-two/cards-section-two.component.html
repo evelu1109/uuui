@@ -1,0 +1,18 @@
+<div class="info-container">
+<p class="title">¡Mas populares!</p>
+<p class="description">Descubre las fotografias mas apoyadas!</p>
+</div>
+
+
+<div class="cards-container">
+
+
+<app-card-post-two [InfoBucle]="item"  [routerLink]="['/','post', item?.ID]" *ngFor="let item of service.infoPost | slice:6:12; let i=index" ></app-card-post-two>
+
+
+
+</div>
+
+<div class="button-container">
+    <app-ver-todas-button></app-ver-todas-button>
+    </div>

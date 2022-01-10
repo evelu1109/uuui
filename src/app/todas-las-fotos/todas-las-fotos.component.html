@@ -1,0 +1,39 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="dark-section">
+
+<p   class="title"> Todas las publicaciones! </p>
+
+<p class="description"> En esta seccion te mostramos todas las publicaciones que se han hecho en la pagina. </p>
+    
+</div>
+
+
+
+<div class="cards-container">
+
+<div class="cards-first-line">
+
+    
+
+
+<div  class="cards-children">
+
+<app-card-post-one  [InfoBucle]="item"  [routerLink]="['/','post', item?.ID]" *ngFor="let item of service.infoPost" ></app-card-post-one>
+
+</div>
+
+</div>
+
+<div class="cards-second-line">
+
+</div>
+
+</div>
+
+<div class="button-container">
+
+</div>
+
+
+<app-footer></app-footer>

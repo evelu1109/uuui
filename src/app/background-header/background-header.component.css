@@ -1,0 +1,72 @@
+.background{
+    background-image: url(./bosque.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.txt-container{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+}
+
+.bg-txt{
+    text-align: left;
+    color: white;
+    font-family: Roboto;
+    font-size: 90px;
+    font-weight: 200;
+    text-shadow: 0px 0px 30px #000000;
+    margin: 0 auto;
+}
+
+.span-01{
+    font-weight: 300;
+}
+
+.span-02{
+    font-weight: 300;
+}
+
+.bg-txt-02{
+    font-family: Roboto;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 30px #000000;
+    font-weight: 200;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) { 
+ 
+    .background{
+        height: 200px;
+        background-size: contain;
+        width: 100%;
+    }
+
+
+    .txt-container{
+        width: 99%;
+        top: 55px;
+    }
+
+    .bg-txt{
+        font-size: 40px;
+        padding-left: 5px;
+    }
+
+    .bg-txt-02{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+
+
+
+
+}

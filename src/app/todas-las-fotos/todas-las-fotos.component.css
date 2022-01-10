@@ -1,0 +1,111 @@
+.title{
+    font-size: 45px;
+    font-weight: 300;
+    font-family: roboto;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 120px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgb(228, 228, 228);
+    padding-bottom: 50px;
+    opacity: 0%;
+    animation-name: animacion-dark-text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.description{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 25px;
+    color: rgb(228, 228, 228);
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 50px;
+    opacity: 0%;
+    animation-name: animacion-dark-text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    
+}
+
+.cards-container{
+    max-width: 100%;
+    height: 100%;
+    background-color: rgb(228, 228, 228);
+    
+}
+
+.cards-first-line{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.cards-second-line{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-container{
+padding-left: 44%;
+background-color: rgb(228, 228, 228);
+padding-bottom: 30px;
+margin: 0 auto;
+}
+
+.cards-children{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+
+.dark-section{
+    background-color: rgb(15, 15, 15);
+    height: 500px;
+    animation-name: animacion-dark;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes animacion-dark {
+    0%{}
+    100%{
+        height: 300px;
+    }
+}
+
+@keyframes animacion-dark-text {
+    0%{}
+    100%{
+        opacity: 100%;
+        padding-bottom: 0px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .cards-children{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        margin-top: 50px;
+    }
+
+
+    @keyframes animacion-dark {
+        0%{}
+        100%{
+            height: 400px;
+        }
+
+}
+}
